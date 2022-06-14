@@ -29,7 +29,8 @@ services:
     depends_on:
       - database
     volumes:
-      - ./:/usr/share/nginx/html
+      - wordpress:/usr/share/nginx/html
 
 volumes:
   db_data: {}
+  wordpress: {}
